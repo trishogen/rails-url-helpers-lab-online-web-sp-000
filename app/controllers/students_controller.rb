@@ -16,6 +16,7 @@ class StudentsController < ApplicationController
       @student.active = true
     end
     @student.save
+    redirect to :show
   end
 
   private
